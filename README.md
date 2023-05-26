@@ -1,4 +1,4 @@
-# triangle-start-STL
+# triangle-stars-STL
 Star Triangle Codes Made Using Function Block
 
 
