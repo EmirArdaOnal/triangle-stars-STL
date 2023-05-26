@@ -1,0 +1,27 @@
+FUNCTION_BLOCK MyFunctionBlock
+VAR_INPUT
+    Yildiz: BOOL;
+    Ucgen: BOOL;
+END_VAR
+
+VAR_OUTPUT
+    Q0: ARRAY[0..5] OF BOOL;
+END_VAR
+
+METHODS
+    METHOD UpdateOutputs: BOOL
+    END_METHOD
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK MyFunctionBlock
+METHOD UpdateOutputs: BOOL
+    Q0[0] := Yildiz;
+    Q0[1] := Yildiz;
+    Q0[2] := Yildiz;
+    
+    Q0[3] := Ucgen;
+    Q0[4] := Ucgen;
+    Q0[5] := Ucgen;
+    
+    UpdateOutputs := TRUE;
+END_METHOD
